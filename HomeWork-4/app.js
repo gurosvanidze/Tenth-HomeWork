@@ -1,6 +1,6 @@
-let userNamber = prompt('Please, enter the numbers');
-while (isNaN(userNamber) || userNamber === '') {
-    alert('Error, Try Again!');
-    userNamber = prompt('Please, enter only numbers!');
-}
-// აი აქ გავიჭედე 
+let number = +prompt('Enter the number');
+let result = 0;
+while(number) {
+    result += number % 10;
+    number = Math.floor(number / 10);
+} alert(`Result is ${result}`);
